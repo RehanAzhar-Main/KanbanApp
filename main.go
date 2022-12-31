@@ -11,7 +11,6 @@ import (
 	"embed"
 	"fmt"
 	"net/http"
-	"os"
 	"sync"
 
 	_ "github.com/lib/pq"
@@ -41,7 +40,7 @@ func FlyURL() string {
 func main() {
 	//TODO: hapus jika sudah di deploy di fly.io
 	// os.Setenv("DATABASE_URL", "postgres://postgres:postgres@localhost:5432/test_db_camp")
-	os.Setenv("DATABASE_URL", "postgres://postgres:HansPG001@localhost:5432/Ruangguru")
+	// os.Setenv("DATABASE_URL", "postgres://postgres:HansPG001@localhost:5432/Ruangguru")
 
 	wg := sync.WaitGroup{}
 
